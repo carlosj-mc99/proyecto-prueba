@@ -8,6 +8,6 @@ import com.org.app.proyecto.carlos.entitys.carro;
 @Repository
 public interface Carrorepository extends JpaRepository<carro, Long> {
 
-	@Query(name="getCarros",nativeQuery = true)
+	@Query(name="SELECT * FROM carros",nativeQuery = true)
 	List<carro> findCarro();
 }

@@ -10,7 +10,7 @@ import com.org.app.proyecto.carlos.entitys.paquete;
 @Repository
 public interface PaqueteRepository extends JpaRepository<paquete, Long> {
 	
-	@Query(name="getPaquetes", nativeQuery = true)
+	@Query(name="SELECT * FROM paquete", nativeQuery = true)
 	List<paquete> findPaquete();
 
 }

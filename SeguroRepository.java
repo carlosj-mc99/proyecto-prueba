@@ -9,7 +9,7 @@ import com.org.app.proyecto.carlos.entitys.seguro;
 @Repository
 public interface SeguroRepository extends JpaRepository<seguro, Long> {
 	
-	@Query(name="getSeguros",nativeQuery = true)
+	@Query(name="SELECT * FROM seguro",nativeQuery = true)
 	List<seguro> findSeguros();
 
 }
