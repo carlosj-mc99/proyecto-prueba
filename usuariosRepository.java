@@ -11,7 +11,7 @@ import com.org.app.proyecto.carlos.entitys.usuario;
 @Repository
 public interface usuariosRepository extends JpaRepository<usuario, Long>{
 	
-	@Query(name="getUsuarios", nativeQuery = true)
+	@Query(name="SELECT * FROM usuarios", nativeQuery = true)
 	List<usuario> findUsuarios();
 	
 

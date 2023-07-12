@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Entity
 @Table(name="paquetes")
-@NamedNativeQuery(name="getPaquetes",query="SELECT p FROM p ")
+@NamedNativeQuery(name="paquete.findAll",query="SELECT p FROM p ")
 @Data
 public class paquete implements Serializable{
 

@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Entity
 @Table(name="seguros")
-@NamedNativeQuery(name="Seguro.findAll",query="SELECT s FROM s ")
+@NamedNativeQuery(name="seguro.findAll",query="SELECT s FROM s ")
 @Data
 public class seguro implements Serializable{
 

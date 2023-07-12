@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Entity
 @Table(name="carros")
-@NamedNativeQuery(name="getCarros",query="SELECT c FROM c ")
+@NamedNativeQuery(name="carro.finAll",query="SELECT c FROM c ")
 @Data
 public class carro implements Serializable{
 

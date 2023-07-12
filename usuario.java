@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Entity
 @Table(name="usuarios")
-@NamedNativeQuery(name="getUsuarios",query="SELECT U FROM U ")
+@NamedNativeQuery(name="usuario.findAll",query="SELECT U FROM U ")
 @Data
 public class usuario implements Serializable{
 	
